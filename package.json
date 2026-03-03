@@ -4,10 +4,12 @@
   "description": "Brain Games - набор консольных игр",
   "type": "module",
   "bin": {
-    "brain-games": "bin/brain-games.js"
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js"
   },
   "scripts": {
     "brain-games": "node bin/brain-games.js",
+    "brain-even": "bin/brain-even.js",
     "lint": "eslint ."
   },
   "dependencies": {
