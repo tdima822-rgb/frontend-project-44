@@ -7,11 +7,18 @@
     "brain-games": "bin/brain-games.js"
   },
   "scripts": {
-    "brain-games": "node bin/brain-games.js"
+    "brain-games": "node bin/brain-games.js",
+    "lint": "eslint ."
   },
   "dependencies": {
     "readline-sync": "^1.4.10"
   },
   "author": "tdima822@gmail.com",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@stylistic/eslint-plugin-js": "^4.4.1",
+    "eslint": "^10.0.2",
+    "globals": "^17.4.0"
+  }
 }

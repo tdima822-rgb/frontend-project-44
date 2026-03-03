@@ -4,4 +4,7 @@ install:
 brain-games:
 	node bin/brain-games.js
 
-.PHONY: install brain-games
+lint:
+	npx eslint .
+
+.PHONY: install brain-games lint
