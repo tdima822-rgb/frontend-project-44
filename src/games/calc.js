@@ -12,14 +12,14 @@ const getRandomNumber = () => Math.floor(Math.random() * 20) + 1;
 // Функция для вычисления результата
 const calculate = (num1, num2, operator) => {
   switch (operator) {
-  case '+':
-    return num1 + num2;
-  case '-':
-    return num1 - num2;
-  case '*':
-    return num1 * num2;
-  default:
-    return null;
+    case '+':
+      return num1 + num2;
+    case '-':
+      return num1 - num2;
+    case '*':
+      return num1 * num2;
+    default:
+      return null;
   }
 };
 
@@ -28,10 +28,10 @@ const generateRound = () => {
   const num1 = getRandomNumber();
   const num2 = getRandomNumber();
   const operator = operations[Math.floor(Math.random() * operations.length)];
-  
+
   const question = `${num1} ${operator} ${num2}`;
   const correctAnswer = calculate(num1, num2, operator).toString();
-  
+
   return { question, correctAnswer };
 };
 

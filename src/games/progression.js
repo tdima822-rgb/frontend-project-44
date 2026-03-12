@@ -37,16 +37,16 @@ const generateRound = () => {
   const start = getRandomNumber(MIN_START, MAX_START);
   const step = getRandomNumber(MIN_STEP, MAX_STEP);
   const hiddenIndex = getRandomNumber(0, length - 1);
-  
+
   // Создаем прогрессию
   const progression = generateProgression(start, step, length);
-  
+
   // Находим правильный ответ (спрятанное число)
   const correctAnswer = progression[hiddenIndex].toString();
-  
+
   // Форматируем вопрос
   const question = formatProgressionWithMissing(progression, hiddenIndex);
-  
+
   return { question, correctAnswer };
 };
 

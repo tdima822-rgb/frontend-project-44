@@ -1,6 +1,5 @@
-
 import globals from 'globals';
-import stylisticJs from '@stylistic/eslint-plugin-js';
+import stylistic from '@stylistic/eslint-plugin';
 
 export default [
   {
@@ -13,19 +12,22 @@ export default [
       ecmaVersion: 'latest',
     },
     plugins: {
-      '@stylistic/js': stylisticJs,
+      '@stylistic': stylistic,
     },
     rules: {
       // Правила Stylistic
-      '@stylistic/js/indent': ['error', 2],
-      '@stylistic/js/linebreak-style': ['error', 'unix'],
-      '@stylistic/js/quotes': ['error', 'single'],
-      '@stylistic/js/semi': ['error', 'always'],
-      '@stylistic/js/comma-dangle': ['error', 'always-multiline'],
-      '@stylistic/js/arrow-parens': ['error', 'always'],
-      '@stylistic/js/brace-style': ['error', '1tbs'],
-      '@stylistic/js/max-len': ['error', { code: 100 }],
-      
+      '@stylistic/indent': ['error', 2],
+      '@stylistic/linebreak-style': ['error', 'unix'],
+      '@stylistic/quotes': ['error', 'single'],
+      '@stylistic/semi': ['error', 'always'],
+      '@stylistic/comma-dangle': ['error', 'always-multiline'],
+      '@stylistic/arrow-parens': ['error', 'as-needed'],
+      '@stylistic/brace-style': ['error', '1tbs'],
+      '@stylistic/max-len': ['error', { code: 100 }],
+      '@stylistic/no-multiple-empty-lines': ['error', { max: 1, maxEOF: 1 }],
+      '@stylistic/no-trailing-spaces': 'error',
+      '@stylistic/eol-last': ['error', 'always'],
+
       // Базовые правила
       'no-unused-vars': ['warn'],
       'no-console': 'off',

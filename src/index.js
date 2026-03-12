@@ -13,7 +13,7 @@ const runGame = (gameRule, generateRound) => {
 
   for (let round = 0; round < ROUNDS_TO_WIN; round++) {
     const { question, correctAnswer } = generateRound();
-    
+
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
 
@@ -22,7 +22,7 @@ const runGame = (gameRule, generateRound) => {
       console.log(`Let's try again, ${name}!`);
       return;
     }
-    
+
     console.log('Correct!');
   }
 

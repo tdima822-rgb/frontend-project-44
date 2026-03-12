@@ -7,13 +7,13 @@ const gameRule = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 const getRandomNumber = () => Math.floor(Math.random() * 100) + 1;
 
 // Функция для проверки, является ли число простым
-const isPrime = (num) => {
+const isPrime = num => {
   if (num < 2) return false;
-  
+
   for (let i = 2; i <= Math.sqrt(num); i++) {
     if (num % i === 0) return false;
   }
-  
+
   return true;
 };
 
@@ -21,7 +21,7 @@ const isPrime = (num) => {
 const generateRound = () => {
   const question = getRandomNumber();
   const correctAnswer = isPrime(question) ? 'yes' : 'no';
-  
+
   return { question, correctAnswer };
 };
 
