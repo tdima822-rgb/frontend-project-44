@@ -11,7 +11,7 @@ const runGame = (gameRule, generateRound) => {
   console.log(`Hello, ${name}!`)
   console.log(gameRule)
 
-  for (let round = 0 round < ROUNDS_TO_WIN round++) {
+  for (let round = 0; round < ROUNDS_TO_WIN; round++) {
     const { question, correctAnswer } = generateRound()
 
     console.log(`Question: ${question}`)
