@@ -12,14 +12,14 @@ const getRandomNumber = () => Math.floor(Math.random() * 20) + 1;
 // Функция для вычисления результата
 const calculate = (num1, num2, operator) => {
   switch (operator) {
-    case '+':
-      return num1 + num2;
-    case '-':
-      return num1 - num2;
-    case '*':
-      return num1 * num2;
-    default:
-      return null;
+  case '+':
+    return num1 + num2;
+  case '-':
+    return num1 - num2;
+  case '*':
+    return num1 * num2;
+  default:
+    return null;
   }
 };
 
