@@ -1,6 +1,3 @@
-install:
-	npm ci
-
 brain-games:
 	node bin/brain-games.js
 
@@ -16,7 +13,10 @@ brain-gcd:
 brain-progression:
 	node bin/brain-progression.js
 
+brain-prime:
+	node bin/brain-prime.js
+
 lint:
 	npx eslint .
 
-.PHONY: install brain-games brain-even brain-calc brain-gcd brain-progression lint
+.PHONY: install brain-games brain-even brain-calc brain-gcd brain-progression brain-prime lint
