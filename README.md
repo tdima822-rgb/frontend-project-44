@@ -9,6 +9,10 @@
 
 [![Maintainability](https://sonarcloud.io/api/project_badges/measure?project=ваш-логин_frontend-project-44&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=ваш-логин_frontend-project-44)
 
+### Демонстрация игры brain-calc
+
+[![Запись игры brain-calc] (https://asciinema.org/a/iRnb60laEpiJgGzs)]
+
 ### Описание проекта
 Набор консольных игр для тренировки мозга.
 
