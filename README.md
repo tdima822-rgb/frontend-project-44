@@ -13,6 +13,10 @@
 
 [![Запись игры brain-calc] (https://asciinema.org/a/iRnb60laEpiJgGzs)]
 
+
+### Демонстрация игры brain-progression
+[![Запись игры brain-progression](https://asciinema.org/a/91NyyCqeO0q1vCQN)]
+
 ### Описание проекта
 Набор консольных игр для тренировки мозга.
 

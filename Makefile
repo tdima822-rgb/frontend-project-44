@@ -13,7 +13,10 @@ brain-calc:
 brain-gcd:
 	node bin/brain-gcd.js
 
+brain-progression:
+	node bin/brain-progression.js
+
 lint:
 	npx eslint .
 
-.PHONY: install brain-games brain-even brain-calc brain-gcd lint
+.PHONY: install brain-games brain-even brain-calc brain-gcd brain-progression lint
