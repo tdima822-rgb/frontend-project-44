@@ -17,7 +17,7 @@ const getRandomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1)
 // Функция для создания прогрессии
 const generateProgression = (start, step, length) => {
   const progression = []
-  for (let i = 0 i < length i++) {
+  for (let i = 0; i < length; i++) {
     progression.push(start + i * step)
   }
   return progression
